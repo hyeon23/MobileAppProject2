@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E4FFE0"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hashtag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="#"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mainMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/admin"
+
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+
+                    android:text="행정관"
+                    android:textSize="9dp" />
+
+                <Button
+                    android:id="@+id/management"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="경영관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/research"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="상허연구관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/education_science"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="교육과학관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/art"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:text="예술문화관"
+                    android:textSize="9dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/language_edu"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="언어교육원"
+                    android:textSize="9dp" />
+
+                <Button
+                    android:id="@+id/museum"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="박물관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/law"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="법학관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/library"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="상허기념도서관"
+                    android:textSize="7dp" />
+                <Button
+                    android:id="@+id/medical_life"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+
+                    android:text="의생명과학연구관"
+                    android:textSize="6dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/life_science"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="생명과학관"
+                    android:textSize="9dp" />
+
+                <Button
+                    android:id="@+id/animal_life"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="동물생명과학관"
+                    android:textSize="7dp" />
+                <Button
+                    android:id="@+id/admission"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="입학정보관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/industry"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="산학협동관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/animal_medical"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+
+                    android:text="수의학관"
+                    android:textSize="9dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/newThousand"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="새천년관"
+                    android:textSize="9dp" />
+
+                <Button
+                    android:id="@+id/architecture"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="건축관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/realestate"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="해봉부동산학관"
+                    android:textSize="7dp" />
+                <Button
+                    android:id="@+id/humanLiterature"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="인문학관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/student"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:text="학생회관"
+                    android:textSize="9dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/engineering"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+
+                    android:text="공학관"
+                    android:textSize="9dp" />
+
+                <Button
+                    android:id="@+id/newEngineering"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+
+                    android:text="신공학관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/science"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+
+                    android:text="과학관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/creative"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+
+                    android:text="창의관"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/international"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:text="국제학사"
+                    android:textSize="9dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:id="@+id/kulhouse"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="쿨하우스"
+                    android:textSize="9dp" />
+
+                <Button
+                    android:id="@+id/middleSchool"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="건대부중"
+                    android:textSize="9dp" />
+                <Button
+                    android:id="@+id/highSchool"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="건대부고"
+                    android:textSize="7dp" />
+                <Button
+                    android:id="@+id/kHospital"
+                    android:background="@drawable/btn_green"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+
+                    android:text="건국대학교병원"
+                    android:textSize="7dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/userlist_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green2"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="사용자 리스트" />
+
+        <Button
+            android:id="@+id/dogam_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green2"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="도감" />
+    </LinearLayout>
+
+</LinearLayout>

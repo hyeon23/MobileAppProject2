@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4FFE0"
+    tools:context=".WriteComment">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar"
+        android:layout_width="240dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="120dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/konkukGray"
+        android:progressTint="@color/konkukGreen"
+        android:rating="4"
+        android:stepSize="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/writeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:background="@drawable/btn_green"
+        android:text="완료"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cancelBtn"
+        app:layout_constraintStart_toEndOf="@+id/cancelBtn" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/btn_green"
+        android:text="취소"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/commentSection"
+        android:layout_width="262dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="76dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="내용을 입력하세요"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

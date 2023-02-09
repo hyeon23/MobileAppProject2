@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4FFE0"
+    android:orientation="vertical"
+    tools:context=".BuildingInfo">
+
+    <TextView
+        android:id="@+id/building"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:text="학생회관"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="30dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="15dp"
+            android:text="이용 시간"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usableTime"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="5dp"
+                android:text="09:00~17:00"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/restTime"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="30dp"
+                android:text="토/일/공휴일 정기휴무"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/facility_list_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/border"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="편의시설 목록"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="30dp"
+            android:paddingTop="25dp"
+            android:text="건물 번호"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/building_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:paddingLeft="30dp"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp"
+            android:text="1"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancelBtn"
+        android:layout_width="388dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:text="CANCEL" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KUF</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    ex_text-->
+    <string name="ex_facilities_title">학생회관</string>
+    <string name="facilities_list_name">편의시설</string>
+    <string name="my_place">나의장소</string>
+    <string name="building">건물</string>
+</resources>
